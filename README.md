@@ -7,15 +7,20 @@ Challenge Code 42
 
 1. Configurez la connexion à la base de donnée.
 
-        - Editez le fichier ".env", modifiez les sections suivantes : 
+        - Editez le fichier ".env", modifiez les sections suivantes :
+                DB_DATABASE=
                 DB_USERNAME=
                 DB_PASSWORD=
-          Elles correspondent à l'identifiant et le mot de passe de connexion à mySQL.
+          Elles correspondent au nom de la base de donée, à l'identifiant 
+          et le mot de passe de connexion à la base de donnée mySQL.
        
        
 2. Connectez l'essemble à la base de donée.
         
-        - Pour créer et connecter la base donnée, exécutez cette commande 
+        - Il vous faut au préalable avoir créé une base de donée portant
+          un nom identique à celui situé sur la ligne "DB_DATABASE" du fichier ".env".
+        
+        - Pour liée la base donnée, exécutez cette commande 
           à la racine du dossier :
                 php artisan migrate
         
